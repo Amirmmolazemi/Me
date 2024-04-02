@@ -7,7 +7,7 @@ import InputBox from "../components/InputBox.jsx";
 import styles from "./styles/ContactPage.module.css";
 
 function ContactPage() {
-  useTitle("contact Me");
+  useTitle("contact");
 
   return (
     <div className={styles.contact}>
