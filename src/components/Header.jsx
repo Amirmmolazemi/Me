@@ -6,8 +6,8 @@ function Header({ styles }) {
       <h3 className={styles.logo}>Amirmohammad Molazemi</h3>
       <nav className={styles.navbar}>
         <Link to="/Me">Home</Link>
-        <Link to="/Me">Portfolio</Link>
-        <Link to="/Me">About</Link>
+        <Link to="/Me/portfolio">Portfolio</Link>
+        <Link to="/Me/about-me">About</Link>
         <Link to="/Me/contact">Contact</Link>
       </nav>
     </header>
