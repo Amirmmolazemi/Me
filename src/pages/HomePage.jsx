@@ -20,7 +20,7 @@ function HomePage() {
           check my CV on About Tab And also you can Contact with me 📞
         </p>
         <div className={styles.btnBox}>
-          <Link to="/Me">My CV</Link>
+          <Link to="/Me/about-me">My CV</Link>
           <Link to="/Me/contact">Let's talk</Link>
         </div>
       </div>
