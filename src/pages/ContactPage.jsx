@@ -1,6 +1,6 @@
 import { useTitle } from "../hooks/useTitle.js";
 
-import { firstRowInputs, secondRowInputs } from "../constant/inputs.js";
+import { inputs } from "../constant/inputs.js";
 
 import InputBox from "../components/InputBox.jsx";
 
@@ -14,12 +14,12 @@ function ContactPage() {
       <h2>Contact Me !</h2>
       <form action="#" className={styles.contactForm}>
         <div className={styles.inputBox}>
-          {firstRowInputs.map((input) => (
+          {inputs[0].map((input) => (
             <InputBox data={input} key={input.id} styles={styles} />
           ))}
         </div>
         <div className={styles.inputBox}>
-          {secondRowInputs.map((input) => (
+          {inputs[1].map((input) => (
             <InputBox data={input} key={input.id} styles={styles} />
           ))}
         </div>
