@@ -17,7 +17,7 @@ function HomePage() {
           Hi everyone ! I'm AmirMohammad and i tend to develop myself at
           front-end developing to become professional 😊
           <br />
-          check my CV on About Tab And also you can Contact with me 📞
+          check my CV on Portfolio Tab And also you can Contact with me 📞
         </p>
         <div className={styles.btnBox}>
           <Link to="/Me/about-me">My CV</Link>
