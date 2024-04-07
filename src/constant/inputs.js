@@ -5,7 +5,7 @@ const inputs = [
   ],
   [
     { id: "phone", name: "phone", type: "tel", placeholder: "Phone Number" },
-    { id: "subject", name: "sunject", type: "text", placeholder: "Subject" },
+    { id: "subject", name: "subject", type: "text", placeholder: "Subject" },
   ],
 ];
 
