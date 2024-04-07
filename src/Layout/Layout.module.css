@@ -90,3 +90,23 @@
     width: 0;
   }
 }
+
+@media ((max-width: 748px) and (min-width: 280px)) {
+  .logo {
+    display: none;
+  }
+
+  .header {
+    padding: 20px 0;
+  }
+  nav {
+    margin: 0 20% 0 auto;
+    position: relative;
+  }
+}
+
+@media (max-width: 375px) {
+  .header {
+    padding: 28px;
+  }
+}
