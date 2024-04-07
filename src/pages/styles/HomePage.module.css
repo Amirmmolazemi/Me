@@ -15,10 +15,6 @@
   height: 450px;
 }
 
-.homeContent {
-  max-width: 624px;
-}
-
 .homeContent h1 {
   font-size: 56px;
   font-weight: 700;
@@ -95,4 +91,29 @@
 
 .btnBox a:hover:before {
   width: 100%;
+}
+
+@media (max-width: 1275px) {
+  .homeImage {
+    display: none;
+  }
+}
+
+@media (max-width: 485px) {
+  .homeContent h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .homeContent .btnBox {
+    display: flex;
+    justify-content: center;
+    width: 306px;
+    height: 50px;
+  }
+
+  .homeContent p {
+    padding: 20px;
+  }
 }
