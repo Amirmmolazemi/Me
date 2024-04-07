@@ -7,7 +7,7 @@ import styles from "./styles/HomePage.module.css";
 import picture from "../assets/picture.jpg";
 
 function HomePage() {
-  useTitle("Home")
+  useTitle("Home");
   return (
     <div className={styles.home}>
       <div className={styles.homeContent}>
@@ -20,7 +20,7 @@ function HomePage() {
           check my CV on Portfolio Tab And also you can Contact with me 📞
         </p>
         <div className={styles.btnBox}>
-          <Link to="/Me/about-me">My CV</Link>
+          <Link to="/Me/portfolio">My CV</Link>
           <Link to="/Me/contact">Let's talk</Link>
         </div>
       </div>
