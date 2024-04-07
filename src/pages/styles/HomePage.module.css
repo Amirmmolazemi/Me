@@ -97,22 +97,27 @@
   .homeImage {
     display: none;
   }
+  .homeContent .btnBox {
+    margin: 0 auto 31%;
+  }
 }
 
 @media (max-width: 485px) {
+  .homeContent {
+    text-align: center;
+  }
   .homeContent h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
-}
-
-@media (max-width: 375px) {
+  .homeContent h3 {
+    font-size: 1.3rem;
+  }
   .homeContent .btnBox {
-    display: flex;
-    justify-content: center;
-    width: 306px;
-    height: 50px;
+    display: block;
+    width: 90%;
+    height: 51px;
+    margin: 0 auto 60%;
   }
-
   .homeContent p {
     padding: 20px;
   }
