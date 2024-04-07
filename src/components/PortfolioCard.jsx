@@ -9,13 +9,16 @@ import {
 } from "@mui/material";
 
 function PortfolioCard({ project }) {
-  const clickHandler = () => {};
-
   return (
     <>
-      <Card sx={{ maxWidth: 345, borderRadius: 4 }}>
+      <Card sx={{ maxWidth: "345px", minWidth: "300px", borderRadius: 4 }}>
         <CardActionArea>
-          <CardMedia component="img" height="140" image="" alt={project.name} />
+          <CardMedia
+            component="img"
+            height="140"
+            image={project.image}
+            alt={project.name}
+          />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
               {project.name}
@@ -24,9 +27,11 @@ function PortfolioCard({ project }) {
           </CardContent>
         </CardActionArea>
         <CardActions>
-          <div onClick={clickHandler}>
-            <Button size="small">Learn More</Button>
-          </div>
+          <a href={project.url} target="_blank">
+            <Button size="small" variant="contained" name={project.name}>
+              Learn More
+            </Button>
+          </a>
         </CardActions>
       </Card>
     </>
