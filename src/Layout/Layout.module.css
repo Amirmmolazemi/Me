@@ -4,7 +4,7 @@
   background: transparent;
   display: flex;
   justify-content: space-between;
-  align-content: center;
+  align-items: center;
 }
 
 .logo {
@@ -24,6 +24,7 @@
   animation: showRight 1s ease forwards;
   animation-delay: 0.4s;
 }
+
 .navbar a {
   font-size: 18px;
   color: #ededed;
@@ -38,14 +39,12 @@
 }
 
 .main {
-  margin: 3.3% 0;
+  margin: 3% 0;
 }
 
 .footer {
-  position: absolute;
-  bottom: 40px;
-  width: 174px;
-  margin-left: 10%;
+  margin: 32px auto;
+  text-align: center;
 }
 
 .footer a {
@@ -85,28 +84,23 @@
   color: #081b29;
 }
 
+@media (max-width: 768px) {
+  .footer {
+    margin-left: 0;
+  }
+}
+
 @keyframes showRight {
   100% {
     width: 0;
   }
 }
 
-@media ((max-width: 748px) and (min-width: 280px)) {
+@media (max-width: 768px) {
   .logo {
     display: none;
   }
-
   .header {
-    padding: 20px 0;
-  }
-  nav {
-    margin: 0 20% 0 auto;
-    position: relative;
-  }
-}
-
-@media (max-width: 375px) {
-  .header {
-    padding: 28px;
+    justify-content: center;
   }
 }
