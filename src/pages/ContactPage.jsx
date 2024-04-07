@@ -27,11 +27,8 @@ function ContactPage() {
     }));
   };
 
-  // useEffect(() => {
-  //   console.log(value);
-  // }, [value.name, value.email, value.body, value.subject, value.phone]);
-
-  const clickHandler = () => {
+  const clickHandler = (event) => {
+    event.preventDefault();
     const emailRegex =
       /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     const phoneRegex =
@@ -63,7 +60,7 @@ function ContactPage() {
   return (
     <div className={styles.contact}>
       <h2>Contact Me !</h2>
-      <form action="#" className={styles.contactForm}>
+      <form className={styles.contactForm}>
         <div className={styles.inputBox}>
           {inputs[0].map((input) => (
             <div
