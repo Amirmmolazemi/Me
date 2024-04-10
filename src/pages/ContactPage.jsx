@@ -20,7 +20,6 @@ function ContactPage() {
   const changeHandler = (event) => {
     const name = event.target.name;
     const valu = event.target.value;
-
     setValue((items) => ({
       ...items,
       [name]: valu,
@@ -44,8 +43,16 @@ function ContactPage() {
       value.subject.length > 0 &&
       value.body.length > 0
     ) {
+      console.log("yes");
       sendEmail(form);
     } else {
+      console.log(
+        value.name.length > 0,
+        emailRegex.test(value.email),
+        phoneRegex.test(value.phone),
+        value.subject.length > 0,
+        value.body.length > 0
+      );
       Swal.fire({
         title: "Invalid Data",
         text: "Your Message Is Not Valid Please Fix Your Message",
@@ -74,6 +81,7 @@ function ContactPage() {
           placeholder="Your Message"
           autoComplete="off"
           name="body"
+          onChange={changeHandler}
         ></textarea>
         <button onClick={clickHandler}>Send Message</button>
       </form>
