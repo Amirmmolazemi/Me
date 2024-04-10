@@ -20,7 +20,6 @@ const sendEmail = (form) => {
           text: "Message Sent Unsuccessfully",
           icon: "error",
         });
-        console.log(error);
       }
     );
 };

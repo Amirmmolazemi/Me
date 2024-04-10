@@ -30,7 +30,6 @@ function ContactPage() {
 
   const clickHandler = (event) => {
     event.preventDefault();
-    console.log(form);
     const emailRegex =
       /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     const phoneRegex =
@@ -43,16 +42,8 @@ function ContactPage() {
       value.subject.length > 0 &&
       value.body.length > 0
     ) {
-      console.log("yes");
       sendEmail(form);
     } else {
-      console.log(
-        value.name.length > 0,
-        emailRegex.test(value.email),
-        phoneRegex.test(value.phone),
-        value.subject.length > 0,
-        value.body.length > 0
-      );
       Swal.fire({
         title: "Invalid Data",
         text: "Your Message Is Not Valid Please Fix Your Message",
