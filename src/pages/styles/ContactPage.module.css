@@ -18,18 +18,7 @@
   padding: 0 20px;
 }
 
-form .inputBox {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.inputBox .inputField {
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-.field .item {
+input {
   width: 100%;
   padding: 12px;
   background: transparent;
@@ -41,33 +30,20 @@ form .inputBox {
   margin: 7px 0;
 }
 
-.field.error .item {
-  border: 2px solid #d93025;
-}
-
-.field .item::placeholder {
+input::placeholder {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.field .errorText {
-  font-size: 12px;
-  color: #d93025;
-  text-align: left;
-  margin: -5px 0 5px;
-  display: none;
-}
-
-.field.error .errorText {
-  display: block;
-}
-
-form .textAriaField .item {
+form textarea {
   width: 100%;
   padding: 12px;
-}
-
-.textAriaField .errorText {
-  margin-top: -5px;
+  background: transparent;
+  border: 2px solid #0ef;
+  outline: none;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #ededed;
+  margin: 7px 0;
 }
 
 form button {
@@ -91,13 +67,9 @@ form button:hover {
 }
 
 @media screen and (max-width: 768px) {
-  .field .item {
+  input {
     padding: 10px;
     font-size: 12px;
-  }
-
-  .field .errorText {
-    font-size: 10px;
   }
 
   form button {
