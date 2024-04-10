@@ -16,7 +16,7 @@ function PortfolioCard({ project }) {
           <CardMedia
             component="img"
             height="140"
-            image={project.image}
+            image={project.src}
             alt={project.name}
           />
           <CardContent>
