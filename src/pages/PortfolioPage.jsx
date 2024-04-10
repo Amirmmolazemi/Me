@@ -10,8 +10,8 @@ function PortfolioPage() {
   return (
     <Grid container spacing={2}>
       <Grid item xs={12} mb={5}>
-        <Typography variant="h3" component="h3" textAlign="center">
-          you can see my projects in this page
+        <Typography variant="h4" component="h3" textAlign="center">
+          you can see my project in the README.md file when you click on button
         </Typography>
       </Grid>
       {projects.map((project) => (
