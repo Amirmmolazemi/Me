@@ -97,4 +97,7 @@
   .header {
     justify-content: center;
   }
+  .navbar a {
+    margin-left: 15px;
+  }
 }
