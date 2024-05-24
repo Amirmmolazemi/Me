@@ -14,7 +14,7 @@ const sendEmail = (form) => {
           icon: "success",
         });
       },
-      (error) => {
+      () => {
         Swal.fire({
           title: "failed",
           text: "Message Sent Unsuccessfully",
