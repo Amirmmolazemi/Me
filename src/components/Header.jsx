@@ -8,6 +8,7 @@ function Header({ styles }) {
         <Link to="/Me">Home</Link>
         <Link to="/Me/portfolio">Portfolio</Link>
         <Link to="/Me/contact">Contact</Link>
+        <Link to="/Me/assignment">assignment</Link>
       </nav>
     </header>
   );
