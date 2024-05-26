@@ -1,8 +1,12 @@
 .container {
   margin: 0 auto;
-  width: 70%;
+  width: 80%;
   height: fit-content;
   background-color: #fff;
   color: black;
   padding: 20px;
+}
+
+.title {
+  font-weight: bold;
 }
