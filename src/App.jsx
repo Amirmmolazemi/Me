@@ -5,7 +5,6 @@ import HomePage from "./pages/HomePage.jsx";
 import ContactPage from "./pages/ContactPage.jsx";
 import PortfolioPage from "./pages/PortfolioPage.jsx";
 import NotFoundPage from "./pages/NotFoundPage.jsx";
-import Assignment from "./pages/Assignment.jsx";
 
 function App() {
   return (
@@ -15,7 +14,6 @@ function App() {
           <Route path="/Me" element={<HomePage />} />
           <Route path="/Me/contact" element={<ContactPage />} />
           <Route path="/Me/portfolio" element={<PortfolioPage />} />
-          <Route path="/Me/assignment" element={<Assignment />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Layout>
